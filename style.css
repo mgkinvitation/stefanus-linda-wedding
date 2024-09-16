@@ -64,6 +64,12 @@ body {
     color: white;
 }
 
+.btn {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .mynavbar {
     background-color: rgba(255, 255, 255, 0.3) !important;
     backdrop-filter: blur(4px);
@@ -107,7 +113,7 @@ body {
 }
 
 .home p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #666;
 }
 
@@ -117,8 +123,15 @@ body {
 
 .home .couple h3 {
     font-family: 'Sacramento';
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     color: var(--rosegold);
+}
+
+.home .couple p {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .home .couple img {
@@ -159,7 +172,10 @@ body {
 }
 
 .info .alamat {
-    font-size: 1.1rem;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5rem;
 }
 
 .info .card {
@@ -169,16 +185,25 @@ body {
 }
 
 .info .card-header {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     border-bottom: 1px solid #999;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
 .info .card-body {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 1rem;
 }
 
 .info .card-footer {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     border-top: 1px solid #999;
     font-size: 0.9rem;
     font-weight: 300;
@@ -202,9 +227,11 @@ body {
 
 .story span,
 .gallery span {
+    font-family: "Cinzel", serif;
+    font-style: normal;
     text-transform: uppercase;
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     display: block;
     margin-bottom: 1rem;
@@ -213,6 +240,8 @@ body {
 .story p,
 .gallery p,
 .rsvp p {
+    font-family: "Cinzel", serif;
+    font-style: normal;
     font-size: 1rem;
     font-weight: 300;
 }
@@ -232,6 +261,7 @@ body {
     width: 1px;
     background-color: #ccc;
     left: 50%;
+    border: 1px solid gold;
 }
 
 .timeline li {
@@ -260,6 +290,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid gold;
 }
 
 .timeline li .timeline-panel {
@@ -270,6 +301,7 @@ body {
     position: relative;
     border-radius: 8px;
     background-color: #fff;
+    border: 2px solid gold;
 }
 
 .timeline li .timeline-panel::before {
@@ -277,8 +309,8 @@ body {
     display: inline-block;
     position: absolute;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right:0 solid #ccc;
+    border-left: 15px solid gold;
+    border-right:0 solid gold;
     border-bottom: 15px solid transparent;
     top: 35%;
     right: -15px;
@@ -289,8 +321,8 @@ body {
     position: absolute;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right:0 solid #fff;
+    border-left: 14px solid gold;
+    border-right:0 solid gold;
     border-bottom: 14px solid transparent;
     top: 36%;
     right: -13px;
@@ -298,6 +330,7 @@ body {
 
 .timeline li.timeline-inverted .timeline-panel {
     float: right;
+    border: 2px solid gold;
 }
 
 .timeline li.timeline-inverted .timeline-panel::before {
@@ -314,6 +347,13 @@ body {
     right: auto;
 }
 
+.timeline-heading h3,
+.timeline-heading span {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .gallery {
     background-image: url(img/bg_gallery.png);
     background-size: cover;
@@ -321,6 +361,13 @@ body {
     margin-top: -6rem;
     padding-top: 10rem;
     padding-bottom: 8rem;
+}
+
+.gallery span {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .gallery h2 {
@@ -347,15 +394,24 @@ body {
 }
 
 .rsvp p {
-    font-size: 1rem;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1,2rem;
     font-weight: 300;
 }
 
 .rsvp form label {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     color: var(--black);
 }
 
 .rsvp button {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     background-color: #f14e95;
     color: #fff;
     border: 1px solid #f14e95;
@@ -384,11 +440,17 @@ body {
 }
 
 .gifts p {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 1rem;
     font-weight: 300;
 }
 
 .gifts span {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
@@ -398,8 +460,18 @@ body {
 }
 
 .gifts h3 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 1rem;
     font-weight: 300;
+}
+
+.no-rek {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
 }
 
 footer {
