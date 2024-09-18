@@ -1,1 +1,1 @@
-# stefanus_linda_wedding
+# stefanus-linda-wedding
