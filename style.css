@@ -67,12 +67,19 @@ body {
     position: relative;
     overflow: hidden;
     padding: 10px 20px;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    display: inline-block;
 }
 
+/* Saat di-hover, warna dan posisi background berubah dengan smooth, serta tombol naik sedikit */
 .hero a:hover {
     background-color: var(--gold);
     color: white;
+    background-position: 100% 0%;
+    transform: translateY(-5px); /* Tombol naik sedikit */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 /* Pseudo-elemen untuk efek cahaya */
