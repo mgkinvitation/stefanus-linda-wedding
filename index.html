@@ -355,36 +355,29 @@
             </div>
           </div>
 
-          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+          <form class="row g-3 align-items-center justify-content-center" method="POST" 
             action="https://script.google.com/macros/s/AKfycby5r5nGFbkcgCAhGfRHzBo3ITaOZ8MVIecp1aXQaCbUoi8C_7nGpdo5bx-m-srya91iKg/exec" id="my-form">
             <div class="col-12">
-              <div class="mb-3">
-                <label for="nama" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nama" name="nama">
-              </div>            
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Name">
             </div>
             <div class="col-12">
-              <div class="mb-3">
-                <label for="jumlah" class="form-label">Number of guests</label>
-                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="3" length="1" value="1">
-              </div>            
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label for="status" class="form-label">RSVP Confirmation</label>
-                <select name="status" id="status" class="form-select">
-                  <option selected>Please choose one</option>
-                  <option value="Hadir">Present</option>
-                  <option value="Tidak Hadir">Absent</option>
+                <select class="form-select" id="jumlah" name="jumlah">
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
                 </select>
-              </div>           
             </div>
-            <div class="col-12" style="margin-top: 35px;">
-              <button class="btn btn-primary">Send</button>
+            <div class="col-12">
+              <select class="form-select" id="status" name="status">
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+          </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">R.S.V.P</button>
             </div>
-          </form>
-
-          <br>
+        </form>
+          
           <br>
 
           <div class="row justify-content-center">
