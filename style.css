@@ -494,23 +494,79 @@ body {
     font-weight: bold;
 }
 
+/* Section RSVP */
 .rsvp {
-    background-image: url(img/bg_rsvp.png);
+    position: relative; /* Memberikan konteks positioning untuk elemen pseudo */
+    background-image: url('img/bg_rsvp.png'); /* Background utama section */
     background-size: cover;
     min-height: 100vh;
     margin-top: -6rem;
     padding-top: 10rem;
     padding-bottom: 8rem;
+    z-index: 1; /* Pastikan section memiliki z-index lebih rendah dari form */
 }
 
+/* Pseudo-elements untuk gambar kiri dan kanan yang bergerak */
+.rsvp::before, .rsvp::after { /* Pindahkan pseudo-elements ke section */
+    content: "";
+    position: absolute;
+    width: 200px; /* Lebar gambar disesuaikan */
+    height: 200px; /* Tinggi gambar disesuaikan */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Transparansi gambar */
+    z-index: 1; /* Gambar di belakang form */
+}
+
+/* Gambar kiri (tetap di sisi kiri form) */
+.rsvp::before {
+    left: 18%; /* Atur posisi di sebelah kiri form */
+    top: 31%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Menyelaraskan gambar secara vertikal */
+    background-image: url('img/flower-left.png'); /* Gambar kiri */
+    animation: moveLeftToRight 2s infinite alternate; /* Menambahkan animasi bergerak */
+}
+
+/* Gambar kanan (tetap di sisi kanan form) */
+.rsvp::after {
+    right: 18%; /* Atur posisi di sebelah kanan form */
+    top: 31%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Menyelaraskan gambar secara vertikal */
+    background-image: url('img/flower-right.png'); /* Gambar kanan */
+    animation: moveRightToLeft 2s infinite alternate; /* Menambahkan animasi bergerak */
+}
+
+/* Formulir RSVP */
 .rsvp form {
-    background-color: rgba(255, 255, 255, 0.1);  /* Warna transparan dengan opacity */
+    position: relative;
+    z-index: 2; /* Pastikan form berada di depan gambar yang bergerak */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi form lebih solid */
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);  /* Bayangan di luar form */
-    backdrop-filter: blur(10px);  /* Efek blur pada background */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Bayangan pada form */
+    backdrop-filter: blur(10px); /* Efek blur pada background form */
     max-width: 600px;
     margin: auto;
+}
+
+/* Animasi untuk gambar kiri */
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateY(-50%) translateX(-10px); /* Mulai dari sedikit di kiri */
+    }
+    100% {
+        transform: translateY(-50%) translateX(10px); /* Bergerak sedikit ke kanan */
+    }
+}
+
+/* Animasi untuk gambar kanan */
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateY(-50%) translateX(10px); /* Mulai dari sedikit di kanan */
+    }
+    100% {
+        transform: translateY(-50%) translateX(-10px); /* Bergerak sedikit ke kiri */
+    }
 }
 
 .rsvp input, .rsvp select, .rsvp textarea {
