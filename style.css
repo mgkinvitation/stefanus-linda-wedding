@@ -465,6 +465,57 @@ body {
     padding-bottom: 8rem;
 }
 
+.rsvp form {
+    background-color: rgba(255, 255, 255, 0.1);  /* Warna transparan dengan opacity */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);  /* Bayangan di luar form */
+    backdrop-filter: blur(10px);  /* Efek blur pada background */
+    max-width: 600px;
+    margin: auto;
+}
+
+.rsvp input, .rsvp select, .rsvp textarea {
+    background-color: rgba(255, 255, 255, 0.3);  /* Transparansi input */
+    color: white;  /* Warna teks putih */
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rsvp input::placeholder, .rsvp textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);  /* Placeholder dengan warna lebih terang */
+}
+
+.form-select {
+    background-color: #3a3a3a;   /* Ubah background dropdown menjadi gelap */
+    color: white;             /* Ubah warna teks menjadi putih */
+    border: none;             /* Hilangkan border */
+    border-radius: 5px;       /* Sudut yang membulat */
+    padding: 10px;            /* Jarak dalam elemen select */
+}
+
+/* Atur background dan text color untuk opsi di dalam dropdown */
+.form-select option {
+    background-color: var(--rosegold);   /* Warna background untuk opsi dropdown */
+    color: white;             /* Warna teks di dalam dropdown */
+}
+
+/* Hover dan aktif state untuk dropdown */
+.form-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--pink);  /* Tambahkan shadow saat dropdown di klik */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
 .rsvp h2 {
     color: var(--rosegold);
     font-family: 'Sacramento';
