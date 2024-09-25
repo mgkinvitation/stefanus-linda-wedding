@@ -241,6 +241,35 @@ body {
     font-weight: bold;
 }
 
+/* Tombol default */
+.btn-dark {
+    background-color: #FF69B4;       /* Warna awal tombol */
+    color: white;                    /* Warna teks */
+    border: none;
+    padding: 10px 80px;
+    font-size: 14px;
+    border-radius: 50px;             /* Tombol bulat */
+    cursor: pointer;
+    position: relative;              /* Untuk efek animasi background */
+    overflow: hidden;                /* Sembunyikan elemen yang keluar dari batas tombol */
+    background: linear-gradient(90deg, #FF69B4 0%, #FF1493 100%); /* Warna gradasi */
+    background-size: 200% 100%;      /* Membuat background lebih besar dari tombol untuk animasi */
+    transition: all 0.4s ease;       /* Efek animasi halus */
+}
+
+/* Hover effect */
+.btn-dark:hover {
+    background-position: right center; /* Animasi background bergerak dari kiri ke kanan */
+    transform: translateY(-5px);       /* Tombol naik sedikit */
+    color: white;                      /* Warna teks tetap putih */
+}
+
+/* Agar teks tetap terlihat selama animasi */
+.btn-dark span {
+    position: relative;
+    z-index: 1;                        /* Z-index lebih tinggi dari background animasi */
+}
+
 .info .alamat {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
