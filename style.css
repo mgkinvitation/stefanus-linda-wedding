@@ -921,6 +921,10 @@ footer li {
 
 /* Extra Large */
 @media (max-width: 1200px) {
+    .hero::before {
+        background-size: cover; /* Tetap menutupi seluruh area */
+    }
+    
     .home .heart {
         transform: translateX(-50%) translateY(45px);
     }
