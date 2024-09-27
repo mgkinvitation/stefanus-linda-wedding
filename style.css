@@ -849,6 +849,7 @@ footer li {
     justify-content: center;
     align-items: center;
     line-height: 0;
+    z-index: 999;
 }
 
 @keyframes rotating {
