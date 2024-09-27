@@ -576,8 +576,8 @@ body {
 .corner-bottom-left,
 .corner-bottom-right {
     position: absolute;
-    width: 50px; /* Ukuran gambar */
-    height: 50px; /* Ukuran gambar */
+    width: 70px; /* Ukuran gambar */
+    height: 70px; /* Ukuran gambar */
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.7;
