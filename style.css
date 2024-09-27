@@ -976,14 +976,14 @@ footer li {
         width: 200px; /* Ubah ukuran untuk perangkat lebih kecil */
         height: 150px;
         left: 14.5%;
-        top: 330px;
+        top: 405px;
     }
 
     .rsvp::after {
         width: 200px;
         height: 150px;
         right: 4.8%;
-        top: 450px;
+        top: 405px;
     }
 
     .rsvp form {
