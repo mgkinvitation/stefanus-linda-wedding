@@ -21,17 +21,19 @@ body {
     overflow: hidden;
 }
 
-.hero ::before {
-    content: '';
+/* Background Image pada Hero Section */
+.hero::before {
+    content: ''; /* Mengatur pseudo-element */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/bg_wedding1B.png);
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+    background-image: url('img/bg_hero_1.jpg'); /* Sesuaikan path gambar */
+    background-size: cover; /* Menutupi seluruh area section */
+    background-position: center center; /* Memposisikan background di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    z-index: -1; /* Menempatkan elemen ini di belakang konten */
 }
 
 .hero h1, 
