@@ -530,22 +530,41 @@
       const song = document.querySelector('#song');
       let isPlaying = false;
 
+      // Fungsi untuk menonaktifkan scroll
       function disableScroll() {
-        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        // Menyimpan posisi scroll saat ini
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-        window.onscroll = function () {
-          window.scrollTo(scrollTop, scrollLeft);
-        }
-        
-        rootElement.style.scrollBehavior = 'auto';
+        // Menyimpan posisi scroll dalam variabel CSS
+        rootElement.style.setProperty('--scroll-top', `${scrollTop}px`);
+
+        // Menonaktifkan scroll dengan memodifikasi body
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollTop}px`;
+        document.body.style.left = '0';
+        document.body.style.width = '100%';
+        document.body.style.overflow = 'hidden';
       }
 
+      // Fungsi untuk mengaktifkan scroll kembali
       function enableScroll() {
-        window.onscroll = function () { }
+        // Mendapatkan kembali nilai scroll top dari variabel CSS
+        const scrollTop = parseInt(getComputedStyle(rootElement).getPropertyValue('--scroll-top')) || 0;
+
+        // Menghapus properti fixed pada body
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.width = '';
+        document.body.style.overflow = '';
+
+        // Mengembalikan posisi scroll ke tempat semula
+        window.scrollTo(0, scrollTop);
+
+        // Mengatur scroll behavior agar smooth
         rootElement.style.scrollBehavior = 'smooth';
-        // localStorage.setItem('opened', 'true');
-        playAudio();
+        playAudio(); // Memutar musik setelah scroll diaktifkan
       }
 
       function playAudio() {
