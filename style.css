@@ -53,6 +53,11 @@ body {
     100% { background-image: url('img/bg_hero_1.jpg'); }
 }
 
+.hero::before {
+    animation: slideShow 20s infinite;
+    transition: background-image 0.5s ease-in-out;
+}
+
 .hero h1, 
 .hero h4, 
 .hero p {
