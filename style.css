@@ -522,7 +522,7 @@ body {
 /* Gambar kiri */
 .rsvp::before {
     left: 19.5%; /* Atur posisi di sebelah kiri form */
-    top: 26%; /* Posisikan di tengah vertikal */
+    top: 28%; /* Posisikan di tengah vertikal */
     transform: translateY(-50%); /* Menyelaraskan gambar secara vertikal */
     background-image: url('img/flower-left.png');
     animation: moveLeftToRight 2s infinite alternate;
@@ -531,7 +531,7 @@ body {
 /* Gambar kanan */
 .rsvp::after {
     right: 15%; /* Atur posisi di sebelah kanan form */
-    top: 32%; /* Posisikan di tengah vertikal */
+    top: 28%; /* Posisikan di tengah vertikal */
     transform: translateY(-50%); /* Menyelaraskan gambar secara vertikal */
     background-image: url('img/flower-right.png');
     animation: moveRightToLeft 2s infinite alternate;
