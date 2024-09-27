@@ -570,6 +570,47 @@ body {
     }
 }
 
+/* Gambar di setiap pojok form */
+.corner-top-left,
+.corner-top-right,
+.corner-bottom-left,
+.corner-bottom-right {
+    position: absolute;
+    width: 70px; /* Ukuran gambar */
+    height: 70px; /* Ukuran gambar */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+/* Gambar di pojok kiri atas */
+.corner-top-left {
+    background-image: url('img/frame_rsvp4.png'); /* Ganti dengan path gambar */
+    top: -3px;
+    left: 10px;
+}
+
+/* Gambar di pojok kanan atas */
+.corner-top-right {
+    background-image: url('img/frame_rsvp3.png'); /* Ganti dengan path gambar */
+    top: -3px;
+    right: 6px;
+}
+
+/* Gambar di pojok kiri bawah */
+.corner-bottom-left {
+    background-image: url('img/frame_rsvp1.png'); /* Ganti dengan path gambar */
+    bottom: 12px;
+    left: 10px;
+}
+
+/* Gambar di pojok kanan bawah */
+.corner-bottom-right {
+    background-image: url('img/frame_rsvp2.png'); /* Ganti dengan path gambar */
+    bottom: 12px;
+    right: 6px;
+}
+
 .rsvp input, .rsvp select, .rsvp textarea {
     background-color: rgba(255, 255, 255, 0.3);  /* Transparansi input */
     color: white;  /* Warna teks putih */
