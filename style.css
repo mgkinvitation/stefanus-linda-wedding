@@ -955,6 +955,10 @@ footer li {
 
 /* laptop */
 @media (max-width: 992px) {
+    .hero::before {
+        background-size: cover; /* Menutupi area dengan background yang proporsional */
+    }
+    
     html {
         font-size: 75%;
     }
@@ -1031,6 +1035,10 @@ footer li {
 
 /* tablet */
 @media (max-width: 768px) {
+    .hero::before {
+        background-size: cover;
+    }
+    
     html {
         font-size: 65%;
     }
@@ -1088,6 +1096,10 @@ footer li {
 
 /* mobile phone */
 @media (max-width: 576px) {
+    .hero::before {
+        background-size: cover;
+    }
+    
     html {
         font-size: 60%;
     }
@@ -1153,6 +1165,10 @@ footer li {
 
 /* mobile phone 2*/
 @media (max-width: 394px) {
+    .hero::before {
+        background-size: cover;
+    }
+    
     html {
         font-size: 60%;
     }
