@@ -496,76 +496,77 @@ body {
 
 /* Section RSVP */
 .rsvp {
-    position: relative; /* Memberikan konteks positioning untuk elemen pseudo */
-    background-image: url('img/bg_rsvp.png'); /* Background utama section */
+    position: relative;
+    background-image: url('img/bg_rsvp.png');
     background-size: cover;
     min-height: 100vh;
     margin-top: -6rem;
     padding-top: 10rem;
     padding-bottom: 8rem;
-    z-index: 1; /* Pastikan section memiliki z-index lebih rendah dari form */
+    z-index: 1;
+    overflow: visible; /* Izinkan gambar keluar dari batas */
 }
 
 /* Pseudo-elements untuk gambar kiri dan kanan yang bergerak */
-.rsvp::before, .rsvp::after { /* Pindahkan pseudo-elements ke section */
+.rsvp::before, .rsvp::after {
     content: "";
     position: absolute;
-    width: 200px; /* Lebar gambar disesuaikan */
-    height: 200px; /* Tinggi gambar disesuaikan */
-    background-size: cover;
+    width: 200px; /* Ubah ukuran sesuai dengan gambar asli */
+    height: 200px; /* Ubah ukuran sesuai dengan gambar asli */
+    background-size: contain; /* Pastikan gambar terdistribusi dengan baik */
     background-repeat: no-repeat;
-    opacity: 0.7; /* Transparansi gambar */
-    z-index: 1; /* Gambar di belakang form */
+    opacity: 0.7;
+    z-index: 1;
 }
 
-/* Gambar kiri (tetap di sisi kiri form) */
+/* Gambar kiri */
 .rsvp::before {
-    left: 18%; /* Atur posisi di sebelah kiri form */
-    top: 31%; /* Posisikan di tengah vertikal */
+    left: 19.5%; /* Atur posisi di sebelah kiri form */
+    top: 26%; /* Posisikan di tengah vertikal */
     transform: translateY(-50%); /* Menyelaraskan gambar secara vertikal */
-    background-image: url('img/flower-left.png'); /* Gambar kiri */
-    animation: moveLeftToRight 2s infinite alternate; /* Menambahkan animasi bergerak */
+    background-image: url('img/flower-left.png');
+    animation: moveLeftToRight 2s infinite alternate;
 }
 
-/* Gambar kanan (tetap di sisi kanan form) */
+/* Gambar kanan */
 .rsvp::after {
-    right: 18%; /* Atur posisi di sebelah kanan form */
-    top: 31%; /* Posisikan di tengah vertikal */
+    right: 15%; /* Atur posisi di sebelah kanan form */
+    top: 32%; /* Posisikan di tengah vertikal */
     transform: translateY(-50%); /* Menyelaraskan gambar secara vertikal */
-    background-image: url('img/flower-right.png'); /* Gambar kanan */
-    animation: moveRightToLeft 2s infinite alternate; /* Menambahkan animasi bergerak */
+    background-image: url('img/flower-right.png');
+    animation: moveRightToLeft 2s infinite alternate;
 }
 
 /* Formulir RSVP */
 .rsvp form {
     position: relative;
-    z-index: 2; /* Pastikan form berada di depan gambar yang bergerak */
-    background-color: rgba(255, 255, 255, 0.1); /* Transparansi form lebih solid */
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Bayangan pada form */
-    backdrop-filter: blur(10px); /* Efek blur pada background form */
-    max-width: 600px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    max-width: 650px;
     margin: auto;
 }
 
 /* Animasi untuk gambar kiri */
 @keyframes moveLeftToRight {
     0% {
-        transform: translateY(-50%) translateX(-10px); /* Mulai dari sedikit di kiri */
+        transform: translateY(-50%) translateX(-10px);
     }
     100% {
-        transform: translateY(-50%) translateX(10px); /* Bergerak sedikit ke kanan */
+        transform: translateY(-50%) translateX(10px);
     }
 }
 
 /* Animasi untuk gambar kanan */
 @keyframes moveRightToLeft {
     0% {
-        transform: translateY(-50%) translateX(10px); /* Mulai dari sedikit di kanan */
+        transform: translateY(-50%) translateX(10px);
     }
     100% {
-        transform: translateY(-50%) translateX(-10px); /* Bergerak sedikit ke kiri */
+        transform: translateY(-50%) translateX(-10px);
     }
 }
 
@@ -857,6 +858,25 @@ footer li {
     .home h2 {
         font-size: 4.7rem;
     }
+
+    .rsvp::before {
+        width: 250px; /* Ubah ukuran untuk perangkat lebih kecil */
+        height: 200px;
+        left: 15.5%;
+    }
+    .rsvp::after {
+        width: 250px;
+        height: 200px;
+        right: 6.5%;
+    }
+    .rsvp form {
+        width: 670px;
+        padding: 35px; /* Kurangi padding */
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 20px; /* Ubah ukuran font untuk input */
+    }
 }
 
 /* laptop */
@@ -905,6 +925,34 @@ footer li {
     .home h2 {
         font-size: 4.5rem;
     }
+
+    .rsvp form {
+        width: 670px;
+        padding: 20px;
+    }
+
+    .rsvp::before {
+        width: 200px; /* Ubah ukuran untuk perangkat lebih kecil */
+        height: 150px;
+        left: 14.5%;
+        top: 330px;
+    }
+
+    .rsvp::after {
+        width: 200px;
+        height: 150px;
+        right: 4.8%;
+        top: 450px;
+    }
+
+    .rsvp form {
+        width: 580px;
+        padding: 20px; /* Kurangi padding */
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 15px; /* Ubah ukuran font untuk input */
+    }
 }
 
 /* tablet */
@@ -938,6 +986,29 @@ footer li {
 
     .logo-navbar {
         max-width: 170px;     /* Sesuaikan ukuran logo pada layar tablet */
+    }
+
+    .rsvp::before {
+        width: 100px;
+        height: 110px;
+        left: 13.5%;
+        top: 290px;
+    }
+
+    .rsvp::after {
+        width: 100px;
+        height: 110px;
+        right: 10.5%;
+        top: 410px;
+    }
+
+    .rsvp form {
+        width: 470px;
+        padding: 20px;
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 12px; /* Ubah ukuran font untuk input */
     }
 }
 
@@ -980,5 +1051,93 @@ footer li {
 
     .logo-navbar {
         max-width: 130px;     /* Sesuaikan ukuran logo pada layar smartphone */
+    }
+
+    .rsvp::before {
+        width: 110px;
+        height: 120px;
+        left: 18.5%;
+        top: 320px;
+    }
+
+    .rsvp::after {
+        width: 110px;
+        height: 120px;
+        right: 14.5%;
+        top: 460px;
+    }
+
+    .rsvp form {
+        width: 260px;
+        padding: 20px;
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 10px; /* Ubah ukuran font lebih kecil */
+    }
+}
+
+/* mobile phone 2*/
+@media (max-width: 394px) {
+    html {
+        font-size: 60%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 43px;
+        margin: 3px;
+    }
+
+    .home h2 {
+        font-size: 3.8rem;
+    }
+
+    .info h2 {
+        font-size: 4.8rem;
+    }
+
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 200px;
+        transform: translateX(-30px);
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 31px;
+    }
+
+    .logo-navbar {
+        max-width: 130px;     /* Sesuaikan ukuran logo pada layar smartphone */
+    }
+
+    .rsvp::before {
+        width: 100px;
+        height: 110px;
+        left: 8.5%;
+        top: 340px;
+    }
+
+    .rsvp::after {
+        width: 100px;
+        height: 110px;
+        right: 3.5%;
+        top: 480px;
+    }
+
+    .rsvp form {
+        width: 240px;
+        padding: 20px;
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 10px; /* Ubah ukuran font lebih kecil */
     }
 }
