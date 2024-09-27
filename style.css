@@ -98,6 +98,7 @@ body {
     background-size: 200% 100%;
     background-position: 0% 0%;
     display: inline-block;
+    z-index: 1; /* Pastikan tombol berada di depan background */
 }
 
 /* Saat di-hover, warna dan posisi background berubah dengan smooth, serta tombol naik sedikit */
