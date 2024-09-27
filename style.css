@@ -1033,14 +1033,14 @@ footer li {
         width: 100px;
         height: 110px;
         left: 13.5%;
-        top: 290px;
+        top: 360px;
     }
 
     .rsvp::after {
         width: 100px;
         height: 110px;
         right: 10.5%;
-        top: 410px;
+        top: 360px;
     }
 
     .rsvp form {
