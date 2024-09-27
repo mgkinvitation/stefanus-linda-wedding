@@ -36,6 +36,23 @@ body {
     z-index: -1; /* Menempatkan elemen ini di belakang konten */
 }
 
+/* Pastikan Konten di Atas Background */
+.hero main {
+    position: relative;
+    z-index: 1; /* Menempatkan konten di atas */
+    text-align: center;
+}
+
+/* Animasi Slide Show untuk Background */
+@keyframes slideShow {
+    0% { background-image: url('img/bg_hero_1.jpg'); }
+    20% { background-image: url('img/bg_hero_2.jpg'); }
+    40% { background-image: url('img/bg_hero_3.jpg'); }
+    60% { background-image: url('img/bg_hero_4.jpg'); }
+    80% { background-image: url('img/bg_hero_5.jpg'); }
+    100% { background-image: url('img/bg_hero_1.jpg'); }
+}
+
 .hero h1, 
 .hero h4, 
 .hero p {
