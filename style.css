@@ -1018,6 +1018,19 @@ footer li {
     .hero::before {
         background-size: cover; /* Tetap menutupi seluruh area */
     }
+
+    #home .corner-image {
+        width: 200px; /* Ukuran gambar yang lebih kecil */
+        height: 200px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 15px; /* Jarak dari kiri yang lebih kecil */
+    }
+
+    #home .corner-image.right {
+        right: 15px; /* Jarak dari kanan yang lebih kecil */
+    }
     
     .home .heart {
         transform: translateX(-50%) translateY(45px);
@@ -1059,6 +1072,19 @@ footer li {
 
     .simply-countdown > .simply-section {
         padding: 70px;
+    }
+
+    #home .corner-image {
+        width: 180px; /* Ukuran gambar yang lebih kecil */
+        height: 180px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 10px; /* Jarak dari kiri yang lebih kecil */
+    }
+
+    #home .corner-image.right {
+        right: 10px; /* Jarak dari kanan yang lebih kecil */
     }
 
     .home .heart {
@@ -1142,6 +1168,19 @@ footer li {
         margin: 5px;
     }
 
+    #home .corner-image {
+        width: 150px; /* Ukuran gambar yang lebih kecil */
+        height: 150px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 5px; /* Jarak dari kiri yang lebih kecil */
+    }
+
+    #home .corner-image.right {
+        right: 5px; /* Jarak dari kanan yang lebih kecil */
+    }
+
     .mynavbar .nav-link {
         font-size: 2rem;
         text-align: center;
@@ -1201,6 +1240,19 @@ footer li {
     .simply-countdown > .simply-section {
         padding: 43px;
         margin: 3px;
+    }
+
+    #home .corner-image {
+        width: 120px; /* Ukuran gambar yang lebih kecil */
+        height: 120px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 0; /* Menyentuh sisi kiri */
+    }
+
+    #home .corner-image.right {
+        right: 0; /* Menyentuh sisi kanan */
     }
 
     .home h2 {
@@ -1270,6 +1322,19 @@ footer li {
     .simply-countdown > .simply-section {
         padding: 43px;
         margin: 3px;
+    }
+
+    #home .corner-image {
+        width: 100px; /* Ukuran gambar yang lebih kecil */
+        height: 100px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 0; /* Menyentuh sisi kiri */
+    }
+
+    #home .corner-image.right {
+        right: 0; /* Menyentuh sisi kanan */
     }
 
     .home h2 {
