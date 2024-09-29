@@ -633,6 +633,36 @@
   });
 </script>
 
+<script>
+  document.addEventListener('scroll', function() {
+      const homeSection = document.getElementById('home');
+      const leftImage = document.querySelector('#home .corner-image.left');
+      const rightImage = document.querySelector('#home .corner-image.right');
+  
+      // Mendapatkan posisi section home di viewport
+      const sectionPosition = homeSection.getBoundingClientRect();
+  
+      // Mengecek apakah bagian atas atau bawah section home berada di viewport
+      if (sectionPosition.top < window.innerHeight && sectionPosition.bottom > 0) {
+          // Tambahkan animasi masuk
+          leftImage.classList.add('active');
+          rightImage.classList.add('active');
+  
+          // Hapus kelas animasi keluar (jika ada)
+          leftImage.classList.remove('leave');
+          rightImage.classList.remove('leave');
+      } else {
+          // Tambahkan animasi keluar
+          leftImage.classList.add('leave');
+          rightImage.classList.add('leave');
+  
+          // Hapus kelas animasi masuk
+          leftImage.classList.remove('active');
+          rightImage.classList.remove('active');
+      }
+  });
+  </script>
+
     <script src="script.js"></script>
     
   </body>
