@@ -194,12 +194,14 @@ body {
 }
 
 .home {
+    position: relative; /* Pastikan section home memiliki relative positioning */
+    min-height: 100vh;
     background-image: url(img/bg_home.png);
     background-size: cover;
-    min-height: 100vh;
     margin-top: -6rem;
     padding-top: 10rem;
     padding-bottom: 15rem;
+    overflow: hidden;
 }
 
 .home h2 {
@@ -260,6 +262,98 @@ body {
 .home .heart i {
     margin: auto;
     color: var(--rosegold);
+}
+
+/* Default state, gambar tidak terlihat */
+#home .corner-image {
+    width: 250px; /* Ukuran gambar */
+    height: 250px;
+    position: absolute;
+    bottom: 1px; /* Jarak dari bawah */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 10;
+    will-change: transform; /* Optimalkan performa animasi */
+}
+
+/* Class untuk gambar kiri */
+#home .corner-image.left {
+    left: 10px; /* Jarak dari kiri */
+}
+
+#home .corner-image.left.active {
+    animation: slideInLeft 5s forwards;
+    opacity: 1;
+    visibility: visible;
+}
+
+#home .corner-image.left.leave {
+    animation: slideOutLeft 5s forwards;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Class untuk gambar kanan */
+#home .corner-image.right {
+    right: 10px; /* Jarak dari kanan */
+}
+
+#home .corner-image.right.active {
+    animation: slideInRight 5s forwards;
+    opacity: 1;
+    visibility: visible;
+}
+
+#home .corner-image.right.leave {
+    animation: slideOutRight 5s forwards;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Animasi untuk masuk dan keluar */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }
 
 .info {
