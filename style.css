@@ -86,7 +86,7 @@ body {
     color: var(--gold);
 }
 
-/* Tombol umum dalam section hero */
+/* Tombol Umum dalam Section Hero */
 .hero a {
     color: var(--gold);
     background-color: white;
@@ -106,7 +106,7 @@ body {
     background-color: var(--gold);
     color: white;
     background-position: 100% 0%;
-    transform: translateY(-5px); /* Tombol naik sedikit */
+    transform: translateY(-5px);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
@@ -193,7 +193,8 @@ body {
     border-color: var(--pink);
 }
 
-.home {
+/* Khusus untuk section home */
+#home {
     position: relative; /* Pastikan section home memiliki relative positioning */
     min-height: 100vh;
     background-image: url(img/bg_home.png);
@@ -363,6 +364,7 @@ body {
     margin-top: -6rem;
     padding-top: 10rem;
     padding-bottom: 8rem;
+    overflow: hidden;
 }
 
 .info h2 {
@@ -427,7 +429,7 @@ body {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .info .card-footer {
@@ -1031,7 +1033,7 @@ footer li {
     #home .corner-image.right {
         right: 15px; /* Jarak dari kanan yang lebih kecil */
     }
-    
+
     .home .heart {
         transform: translateX(-50%) translateY(45px);
     }
@@ -1065,7 +1067,7 @@ footer li {
     .hero::before {
         background-size: cover; /* Menutupi area dengan background yang proporsional */
     }
-    
+
     html {
         font-size: 75%;
     }
@@ -1158,7 +1160,7 @@ footer li {
     .hero::before {
         background-size: cover;
     }
-    
+
     html {
         font-size: 65%;
     }
@@ -1166,19 +1168,6 @@ footer li {
     .simply-countdown > .simply-section {
         padding: 60px;
         margin: 5px;
-    }
-
-    #home .corner-image {
-        width: 150px; /* Ukuran gambar yang lebih kecil */
-        height: 150px; /* Tinggi yang proporsional */
-    }
-
-    #home .corner-image.left {
-        left: 5px; /* Jarak dari kiri yang lebih kecil */
-    }
-
-    #home .corner-image.right {
-        right: 5px; /* Jarak dari kanan yang lebih kecil */
     }
 
     .mynavbar .nav-link {
@@ -1193,6 +1182,19 @@ footer li {
     .timeline li .timeline-image {
         width: 130px;
         height: 130px;
+    }
+
+    #home .corner-image {
+        width: 150px; /* Ukuran gambar yang lebih kecil */
+        height: 150px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 5px; /* Jarak dari kiri yang lebih kecil */
+    }
+
+    #home .corner-image.right {
+        right: 5px; /* Jarak dari kanan yang lebih kecil */
     }
 
     .home h2 {
@@ -1232,7 +1234,7 @@ footer li {
     .hero::before {
         background-size: cover;
     }
-    
+
     html {
         font-size: 60%;
     }
@@ -1314,7 +1316,7 @@ footer li {
     .hero::before {
         background-size: cover;
     }
-    
+
     html {
         font-size: 60%;
     }
