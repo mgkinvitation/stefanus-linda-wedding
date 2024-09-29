@@ -13,49 +13,39 @@ body {
     min-height: 2000px;
 }
 
-/* Background Animasi pada Section Hero */
+/* Section hero tetap memenuhi layar */
 .hero {
     position: relative;
-    width: 100%;
-    min-height: 100vh; /* Pastikan Hero section mencakup seluruh tinggi layar */
-    overflow: hidden;
+    min-height: 100vh; /* Tetap memenuhi tinggi layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Untuk menyembunyikan bagian luar */
 }
 
-/* Background Image pada Hero Section */
-.hero::before {
-    content: ''; /* Mengatur pseudo-element */
+/* Carousel sebagai background di belakang teks */
+#heroCarousel {
+    z-index: -1; /* Tempatkan carousel di belakang teks */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('img/bg_hero_1.jpg'); /* Sesuaikan path gambar */
-    background-size: cover; /* Menutupi seluruh area section */
-    background-position: center center; /* Memposisikan background di tengah */
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-    z-index: -1; /* Menempatkan elemen ini di belakang konten */
+    height: 100vh; /* Pastikan carousel memenuhi seluruh tinggi viewport */
 }
 
-/* Pastikan Konten di Atas Background */
+/* Set gambar agar responsif pada carousel */
+.carousel-item img {
+    width: 100%; /* Gambar memenuhi lebar */
+    height: 100vh; /* Gambar memenuhi tinggi viewport */
+    object-fit: cover; /* Menjaga proporsi gambar tanpa distorsi */
+}
+
+/* Konten tetap berada di atas carousel */
 .hero main {
     position: relative;
-    z-index: 1; /* Menempatkan konten di atas */
+    z-index: 1; /* Konten berada di atas carousel */
     text-align: center;
-}
-
-/* Animasi Slide Show untuk Background */
-@keyframes slideShow {
-    0% { background-image: url('img/bg_hero_1.jpg'); }
-    20% { background-image: url('img/bg_hero_2.jpg'); }
-    40% { background-image: url('img/bg_hero_3.jpg'); }
-    60% { background-image: url('img/bg_hero_4.jpg'); }
-    80% { background-image: url('img/bg_hero_5.jpg'); }
-    100% { background-image: url('img/bg_hero_1.jpg'); }
-}
-
-.hero::before {
-    animation: slideShow 20s infinite;
-    transition: background-image 0.5s ease-in-out;
+    color: white;
 }
 
 .hero h1, 
