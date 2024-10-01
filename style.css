@@ -204,7 +204,16 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 10;
+    z-index: 0;
+}
+
+/* Pastikan elemen teks memiliki z-index lebih tinggi */
+.home h2,
+.home h3,
+.home p,
+.home .couple {
+    position: relative; /* Tambahkan relative untuk memastikan z-index berfungsi */
+    z-index: 5; /* Setel z-index lebih tinggi dari gambar */
 }
 
 .home h2 {
