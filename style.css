@@ -705,7 +705,16 @@ body {
     opacity: 0; /* Awalnya tidak terlihat */
     visibility: hidden; /* Awalnya tidak terlihat */
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 10; /* Di atas elemen lain */
+    z-index: 0; /* Atur z-index lebih rendah agar di belakang teks */
+}
+
+/* Pastikan elemen teks memiliki z-index lebih tinggi */
+.story h2,
+.story p,
+.story .timeline,
+.story .timeline li .timeline-panel {
+    position: relative; /* Tambahkan position relative untuk memastikan z-index berfungsi */
+    z-index: 5; /* Setel z-index lebih tinggi dari gambar */
 }
 
 .story-corner-image.left {
