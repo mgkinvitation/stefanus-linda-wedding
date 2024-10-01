@@ -626,7 +626,7 @@ body {
     padding: 2rem;
     position: relative;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: transparent; /* untuk rubah background dalam kotak */
     border: 2px solid gold;
 }
 
