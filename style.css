@@ -1365,7 +1365,7 @@ footer {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     padding: 3rem;
-    background-color: #b60e3b;
+    background-color: var(--rosegold);
     color: white;
 }
 
