@@ -1365,7 +1365,7 @@ footer {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     padding: 3rem;
-    background-color: var(--rosegold);
+    background-color: #b60e3b;
     color: white;
 }
 
@@ -1376,7 +1376,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--gold);
+    color: var(--pink);
 }
 
 footer li {
