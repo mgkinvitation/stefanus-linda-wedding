@@ -469,7 +469,7 @@ body {
 }
 
 .info h2 {
-    color: var(--rosegold);
+    color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
@@ -543,7 +543,7 @@ body {
 }
 
 .story h2 {
-    color: var(--rosegold);
+    color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
@@ -814,7 +814,7 @@ body {
 }
 
 .gallery h2 {
-    color: var(--rosegold);
+    color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
@@ -1285,7 +1285,7 @@ body {
 }
 
 .gifts h2 {
-    color: var(--rosegold);
+    color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
