@@ -217,7 +217,7 @@ body {
 }
 
 .home h2 {
-    color: var(--rosegold);
+    color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
     font-weight: bold;
@@ -226,7 +226,7 @@ body {
 .home h3 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
-    color: #B76E79;
+    color: var(--pink);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -245,7 +245,7 @@ body {
 .home .couple h3 {
     font-family: 'Sacramento';
     font-size: 2.5rem;
-    color: var(--rosegold);
+    color: var(--pink);
 }
 
 .home .couple p {
