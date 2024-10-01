@@ -946,7 +946,26 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 10;
+    z-index: 0; /* Set z-index lebih rendah agar di belakang teks */
+}
+
+/* Atur elemen #disqus_thread dengan z-index lebih tinggi */
+#disqus_thread {
+    position: relative; /* Tambahkan position relative untuk memastikan z-index berfungsi */
+    z-index: 5; /* Z-index lebih tinggi agar di depan gambar */
+}
+
+/* Pastikan elemen teks dan form memiliki z-index lebih tinggi */
+.rsvp h2,
+.rsvp p,
+.rsvp form,
+.rsvp form label,
+.rsvp form input,
+.rsvp form textarea,
+.rsvp form button,
+.rsvp form select {
+    position: relative; /* Tambahkan position relative untuk memastikan z-index bekerja */
+    z-index: 5; /* Atur z-index lebih tinggi untuk berada di depan gambar */
 }
 
 /* Gambar kiri pada section rsvp */
