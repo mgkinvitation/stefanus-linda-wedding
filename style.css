@@ -1852,16 +1852,16 @@ footer li {
         font-size: 12px; /* Ubah ukuran font untuk input */
     }
 
-    /* Gambar kiri */
+   /* Gambar kiri */
     .rsvp::before {
-        left: 10%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
-        top: 23%; /* Sesuaikan top untuk penempatan vertikal */
+        left: 3.5%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
+        top: 26%; /* Sesuaikan top untuk penempatan vertikal */
     }
 
     /* Gambar kanan */
     .rsvp::after {
-        right: 5%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
-        top: 23%; /* Sesuaikan top untuk penempatan vertikal */
+        right: 0%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
+        top: 26%; /* Sesuaikan top untuk penempatan vertikal */
     }
 
     .rsvp-corner-image {
