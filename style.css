@@ -1873,17 +1873,19 @@ footer li {
     #gifts .corner-image {
         width: 160px; /* Ukuran gambar */
         height: 160px; /* Tinggi yang proporsional */
-        top: 263%; /* Atur posisi dari atas */
+        bottom: 5px; /* Sesuaikan posisi dari bawah */
     }
 
     /* Gambar kiri */
     #gifts .corner-image.left {
-        left: -12px; /* Menyentuh sisi kiri */
+        left: -5%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
+        top: 180%; /* Sesuaikan top untuk penempatan vertikal */
     }
 
     /* Gambar kanan */
     #gifts .corner-image.right {
-        right: -12px; /* Menyentuh sisi kanan */
+        right: -5%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
+        top: 180%; /* Sesuaikan top untuk penempatan vertikal */
     }
 
     /* Gambar kiri saat aktif */
