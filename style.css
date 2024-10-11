@@ -2557,13 +2557,13 @@ footer li {
     /* Gambar kiri */
     #gifts .corner-image.left {
         left: 0; /* Menyentuh sisi kiri */
-        top: 95%;
+        top: 362%;
     }
 
     /* Gambar kanan */
     #gifts .corner-image.right {
         right: 0; /* Menyentuh sisi kanan */
-        top: 95%;
+        top: 362%;
     }
 
     /* Gambar kiri saat aktif */
