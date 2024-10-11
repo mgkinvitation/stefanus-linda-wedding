@@ -2587,4 +2587,42 @@ footer li {
         padding: 6px 12px;
         font-size: 13px;
     }
+
+    .terimakasih {
+        padding-top: 8rem;
+        padding-bottom:2rem;
+    }
+
+    .terimakasih h2 {
+        font-size: 3.5rem;
+    }
+
+    .terimakasih p {
+        font-size: 1.2rem;
+    }
+
+    .terimakasih img.frame-image {
+        margin-bottom: 1rem;
+        max-width: 90%; /* Membatasi lebar gambar utama agar menyesuaikan lebar layar */
+        height: 300px; /* Membiarkan tinggi mengikuti proporsi asli */
+    }
+
+    /* Gaya untuk gambar bergerak */
+    .terimakasih .gifts-corner-image {
+        width: 135px; /* Ukuran gambar bergerak lebih kecil untuk layar kecil */
+        height: 135px;
+        opacity: 0.8;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Posisi gambar di sudut kiri dan kanan */
+    .terimakasih .gifts-corner-image.left {
+        top: 83%; /* Sesuaikan posisi untuk layar kecil */
+        left: 0;
+    }
+
+    .terimakasih .gifts-corner-image.right {
+        top: 83%; /* Sesuaikan posisi untuk layar kecil */
+        right: 0;
+    }
 }
