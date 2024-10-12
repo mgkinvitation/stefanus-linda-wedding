@@ -2425,7 +2425,7 @@ footer li {
 
     .home-corner-image.left {
         left: 2px; /* Ubah nilai untuk menggeser gambar kiri */
-        bottom: -60px; /* Sesuaikan posisi dari bawah */
+        bottom: -150px; /* Sesuaikan posisi dari bawah */
     }
 
     .home-corner-image.right {
