@@ -291,6 +291,7 @@ gambar dari /* Wrapper untuk membungkus gambar dan border */
     font-family: 'Sacramento';
     font-size: 2.5rem;
     color: var(--pink);
+    text-shadow: var(--shadow);
 }
 
 .home .couple p {
