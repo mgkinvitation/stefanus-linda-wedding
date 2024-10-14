@@ -2222,7 +2222,7 @@ footer li {
     }
 
     .hero h1 {
-        font-size: 5rem; /* Kurangi ukuran font untuk layar kecil */
+        font-size: 4rem; /* Kurangi ukuran font untuk layar kecil */
     }
 
     html {
