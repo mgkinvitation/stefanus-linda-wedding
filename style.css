@@ -1828,19 +1828,19 @@ footer li {
     }
 
     #gifts .corner-image {
-        width: 200px; /* Ukuran gambar */
-        height: 200px; /* Tinggi yang proporsional */
-        top: 192%; /* Atur posisi dari atas */
+        width: 200px; /* Lebih besar dari sebelumnya */
+        height: 300px; /* Lebih tinggi agar proporsional */
+        top: 230%; /* Atur posisi dari atas agar gambar terlihat baik */
     }
-
+    
     /* Gambar kiri */
     #gifts .corner-image.left {
-        left: -25px; /* Menyentuh sisi kiri */
+        left: -110px; /* Sesuaikan posisi kiri dengan ukuran gambar yang lebih besar */
     }
-
+    
     /* Gambar kanan */
     #gifts .corner-image.right {
-        right: -25px; /* Menyentuh sisi kanan */
+        right: -110px; /* Sesuaikan posisi kanan dengan ukuran gambar yang lebih besar */
     }
 
     /* Gambar kiri saat aktif */
