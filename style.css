@@ -2210,6 +2210,226 @@ footer li {
 }
 
 /* mobile phone */
+@media (max-width: 720px) {
+    /* Pastikan video tetap responsif */
+    #backgroundVideo {
+        height: auto; /* Biarkan tinggi video otomatis */
+        width: 100%; /* Lebar tetap 100% */
+    }
+
+    .hero {
+        min-height: 100vh; /* Sesuaikan tinggi hero agar tidak terlalu tinggi */
+    }
+
+    html {
+        font-size: 40%;
+    }
+
+    .simply-countdown {
+        display: flex; /* Mengatur countdown dalam satu baris */
+        justify-content: space-between; /* Memberi jarak antara item countdown */
+        align-items: center; /* Menyelaraskan item secara vertikal */
+        flex-wrap: nowrap; /* Mencegah elemen turun ke bawah */
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 10px; /* Sesuaikan padding agar lebih pas di layar kecil */
+        margin: 3px;
+        min-width: 50px; /* Tentukan lebar minimum agar elemen tidak terlalu kecil */
+        text-align: center; /* Menyelaraskan teks di tengah */
+    }
+
+    .home-corner-image.left {
+        left: 2px; /* Ubah nilai untuk menggeser gambar kiri */
+        bottom: 58px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .home-corner-image.right {
+        right: 2px; /* Ubah nilai untuk menggeser gambar kanan */
+        bottom: 58px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .home-corner-image {
+        width: 150px; /* Ukuran gambar yang lebih kecil */
+        height: 150px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image {
+        width: 120px; /* Ukuran gambar yang lebih kecil */
+        height: 120px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 0; /* Menyentuh sisi kiri */
+    }
+
+    #home .corner-image.right {
+        right: 0; /* Menyentuh sisi kanan */
+    }
+
+    .home h2 {
+        font-size: 3.8rem;
+    }
+
+    .info-corner-image.left {
+        left: 2px; /* Ubah nilai untuk menggeser gambar kiri */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .info-corner-image.right {
+        right: 2px; /* Ubah nilai untuk menggeser gambar kanan */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .info-corner-image {
+        width: 150px; /* Ukuran gambar yang lebih kecil */
+        height: 150px; /* Tinggi yang proporsional */
+    }
+
+    .info h2 {
+        font-size: 4.8rem;
+    }
+
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 200px;
+        transform: translateX(-30px);
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 31px;
+    }
+
+    .logo-navbar {
+        max-width: 130px;     /* Sesuaikan ukuran logo pada layar smartphone */
+    }
+
+    .story-corner-image.left {
+        left: 2px; /* Ubah nilai untuk menggeser gambar kiri */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .story-corner-image.right {
+        right: 2px; /* Ubah nilai untuk menggeser gambar kanan */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .story-corner-image {
+        width: 150px; /* Ukuran gambar yang lebih kecil */
+        height: 150px; /* Tinggi yang proporsional */
+    }
+
+    .rsvp::before {
+        width: 110px;
+        height: 120px;
+        left: 18.5%;
+        top: 400px;
+    }
+
+    .rsvp::after {
+        width: 110px;
+        height: 120px;
+        right: 14.5%;
+        top: 400px;
+    }
+
+    .rsvp form {
+        width: 260px;
+        padding: 20px;
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 10px; /* Ubah ukuran font lebih kecil */
+    }
+
+    /* Gambar kiri */
+    .rsvp::before {
+        left: 10%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
+        top: 23%; /* Sesuaikan top untuk penempatan vertikal */
+    }
+
+    /* Gambar kanan */
+    .rsvp::after {
+        right: 5%; /* Ubah nilai ini untuk menggeser gambar ke kiri atau kanan */
+        top: 23%; /* Sesuaikan top untuk penempatan vertikal */
+    }
+
+    .rsvp-corner-image {
+        width: 150px; /* Ukuran gambar yang lebih kecil */
+        height: 150px; /* Tinggi yang proporsional */
+        bottom: 5px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .btn-primary {
+        padding: 6px 50px;
+        font-size: 14px;
+    }
+
+    #gifts .corner-image {
+        width: 150px; /* Ukuran gambar */
+        height: 150px; /* Tinggi yang proporsional */
+        top: 285%; /* Atur posisi dari atas */
+    }
+
+    /* Gambar kiri */
+    #gifts .corner-image.left {
+        left: -12px; /* Menyentuh sisi kiri */
+    }
+
+    /* Gambar kanan */
+    #gifts .corner-image.right {
+        right: -12px; /* Menyentuh sisi kanan */
+    }
+
+    /* Gambar kiri saat aktif */
+    #gifts .corner-image.left.active {
+        animation: slideInLeft 5s forwards; /* Animasi masuk dari kiri */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(40px); /* Turunkan posisi gambar ketika aktif */
+    }
+
+    /* Gambar kanan saat aktif */
+    #gifts .corner-image.right.active {
+        animation: slideInRight 5s forwards; /* Animasi masuk dari kanan */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(40px); /* Turunkan posisi gambar ketika aktif */
+    }
+
+    #ucapanForm .btn {
+        max-width: 160px;  /* Lebar lebih kecil */
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+
+    .terimakasih {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    .terimakasih h2 {
+        font-size: 3rem;
+    }
+
+    .terimakasih p {
+        font-size: 1.3rem;
+    }
+
+    .terimakasih img.frame-image {
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* mobile phone */
 @media (max-width: 576px) {
     /* Pastikan video tetap responsif */
     #backgroundVideo {
