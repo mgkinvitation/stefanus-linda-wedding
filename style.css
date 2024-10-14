@@ -1799,13 +1799,14 @@ footer li {
     .rsvp::before {
         width: 250px; /* Ubah ukuran untuk perangkat lebih kecil */
         height: 200px;
-        left: 15.5%;
+        left: 19.2%;
     }
     .rsvp::after {
         width: 250px;
         height: 200px;
-        right: 6.5%;
+        right: 11.2%;
     }
+    
     .rsvp form {
         width: 670px;
         padding: 35px; /* Kurangi padding */
