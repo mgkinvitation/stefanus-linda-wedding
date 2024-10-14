@@ -1843,6 +1843,229 @@ footer li {
     }
 }
 
+/* mobile 1080 */
+@media (max-width: 1080px) {
+    /* Pastikan video tetap responsif */
+    #backgroundVideo {
+        height: auto; /* Biarkan tinggi video otomatis */
+        width: 100%; /* Lebar tetap 100% */
+    }
+
+    .hero {
+        min-height: 100vh; /* Sesuaikan tinggi hero agar tidak terlalu tinggi */
+    }
+
+    .hero h1 {
+        font-size: 7rem; /* Kurangi ukuran font untuk layar kecil */
+    }
+
+    html {
+        font-size: 75%;
+    }
+
+    .simply-countdown {
+        display: flex; /* Mengatur countdown dalam satu baris */
+        justify-content: space-between; /* Memberi jarak antara item countdown */
+        align-items: center; /* Menyelaraskan item secara vertikal */
+        flex-wrap: nowrap; /* Mencegah elemen turun ke bawah */
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 70px; /* Sesuaikan padding agar lebih pas di layar kecil */
+        margin: 3px;
+        min-width: 50px; /* Tentukan lebar minimum agar elemen tidak terlalu kecil */
+        text-align: center; /* Menyelaraskan teks di tengah */
+    }
+
+    #home .corner-image {
+        width: 180px; /* Ukuran gambar yang lebih kecil */
+        height: 180px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 10px; /* Jarak dari kiri yang lebih kecil */
+    }
+
+    #home .corner-image.right {
+        right: 10px; /* Jarak dari kanan yang lebih kecil */
+    }
+
+    .home .heart {
+        display: none;
+    }
+
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-image {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -16px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+
+    #home .corner-image {
+        width: 180px; /* Ukuran gambar yang lebih kecil */
+        height: 180px; /* Tinggi yang proporsional */
+    }
+
+    #home .corner-image.left {
+        left: 5px; /* Jarak dari kiri yang lebih kecil */
+    }
+
+    #home .corner-image.right {
+        right: 5px; /* Jarak dari kanan yang lebih kecil */
+    }
+
+    .home h2 {
+        font-size: 4.5rem;
+    }
+
+    .info-corner-image.left {
+        left: 2px; /* Ubah nilai untuk menggeser gambar kiri */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .info-corner-image.right {
+        right: 2px; /* Ubah nilai untuk menggeser gambar kanan */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .info-corner-image {
+        width: 180px; /* Ukuran gambar yang lebih kecil */
+        height: 180px; /* Tinggi yang proporsional */
+    }
+
+    .story-corner-image.left {
+        left: 2px; /* Ubah nilai untuk menggeser gambar kiri */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .story-corner-image.right {
+        right: 2px; /* Ubah nilai untuk menggeser gambar kanan */
+        bottom: 1px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .story-corner-image {
+        width: 180px; /* Ukuran gambar yang lebih kecil */
+        height: 180px; /* Tinggi yang proporsional */
+    }
+
+
+    .rsvp form {
+        width: 670px;
+        padding: 20px;
+    }
+
+    .rsvp::before {
+        width: 200px; /* Ubah ukuran untuk perangkat lebih kecil */
+        height: 150px;
+        left: 14.5%;
+        top: 405px;
+    }
+
+    .rsvp::after {
+        width: 200px;
+        height: 150px;
+        right: 4.8%;
+        top: 405px;
+    }
+
+    .rsvp form {
+        width: 580px;
+        padding: 20px; /* Kurangi padding */
+    }
+
+    .rsvp input, .rsvp select, .rsvp textarea {
+        font-size: 15px; /* Ubah ukuran font untuk input */
+    }
+
+    .rsvp-corner-image {
+        width: 180px; /* Ukuran gambar yang lebih kecil */
+        height: 180px; /* Tinggi yang proporsional */
+        bottom: 5px; /* Sesuaikan posisi dari bawah */
+    }
+
+    .btn-primary {
+        padding: 10px 70px;
+        font-size: 16px;
+    }
+
+    #gifts .corner-image {
+        width: 180px; /* Ukuran gambar */
+        height: 180px; /* Tinggi yang proporsional */
+        top: 248%; /* Atur posisi dari atas */
+    }
+
+    /* Gambar kiri */
+    #gifts .corner-image.left {
+        left: -12px; /* Menyentuh sisi kiri */
+    }
+
+    /* Gambar kanan */
+    #gifts .corner-image.right {
+        right: -12px; /* Menyentuh sisi kanan */
+    }
+
+    /* Gambar kiri saat aktif */
+    #gifts .corner-image.left.active {
+        animation: slideInLeft 5s forwards; /* Animasi masuk dari kiri */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(40px); /* Turunkan posisi gambar ketika aktif */
+    }
+
+    /* Gambar kanan saat aktif */
+    #gifts .corner-image.right.active {
+        animation: slideInRight 5s forwards; /* Animasi masuk dari kanan */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(40px); /* Turunkan posisi gambar ketika aktif */
+    }
+
+    #ucapanForm .btn {
+        max-width: 200px;  /* Lebar tombol disesuaikan lagi */
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .terimakasih {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
+    .terimakasih h2 {
+        font-size: 4rem;
+    }
+
+    .terimakasih p {
+        font-size: 1.6rem;
+    }
+
+    .terimakasih img.frame-image {
+        margin-bottom: 2rem;
+    }
+}
+
 /* laptop */
 @media (max-width: 992px) {
     /* Pastikan video tetap responsif */
