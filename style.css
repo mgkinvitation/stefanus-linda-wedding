@@ -2221,6 +2221,10 @@ footer li {
         min-height: 100vh; /* Sesuaikan tinggi hero agar tidak terlalu tinggi */
     }
 
+    .hero h1 {
+        font-size: 5rem; /* Kurangi ukuran font untuk layar kecil */
+    }
+
     html {
         font-size: 40%;
     }
